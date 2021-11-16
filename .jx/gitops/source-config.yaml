@@ -3,6 +3,13 @@ kind: SourceConfig
 metadata:
   creationTimestamp: null
 spec:
+  groups:
+  - owner: gongli-nanjing
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: test2
+    scheduler: in-repo
   jenkinsServers:
   - groups:
     - owner: gongli-nanjing
