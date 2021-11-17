@@ -10,6 +10,14 @@ spec:
     repositories:
     - name: test2
     scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: gongli-nanjing
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: test5
+    server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
